@@ -1,0 +1,30 @@
+{
+  "name": "emailauthpg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.ts",
+  "scripts": {
+    "dev": "nodemon --watch src -e ts --exec ts-node -r dotenv/config src/server.ts",
+    "build": "rm -rf build/ && prettier --write src/ && tsc",
+    "start": "node dist/index.js"
+  },
+  "author": "Rahas Das",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.13",
+    "express": "^4.18.1",
+    "node-postgres": "^0.6.2",
+    "postgres-migrations": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^18.0.3",
+    "@types/pg": "^8.6.5",
+    "dotenv": "^16.0.1",
+    "nodemon": "^2.0.19",
+    "ts-node": "^10.8.2",
+    "ttypescript": "^1.5.13",
+    "typescript": "^4.7.4",
+    "typescript-transform-paths": "^3.3.1"
+  }
+}
